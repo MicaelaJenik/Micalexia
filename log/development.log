@@ -1,0 +1,371 @@
+  [1m[35m (0.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "CHANGE_THIS_TO_YOUR_RAILS_APP_NAME_development"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "CHANGE_THIS_TO_YOUR_RAILS_APP_NAME_test"[0m
+  [1m[35m (268.4ms)[0m  [1m[35mCREATE DATABASE "CHANGE_THIS_TO_YOUR_RAILS_APP_NAME_development" ENCODING = 'unicode'[0m
+  [1m[35m (94.6ms)[0m  [1m[35mCREATE DATABASE "CHANGE_THIS_TO_YOUR_RAILS_APP_NAME_test" ENCODING = 'unicode'[0m
+  [1m[35m (32.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (26.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2054292390599346030)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-30 18:35:23.546256"], ["updated_at", "2021-03-30 18:35:23.546256"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2054292390599346030)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-03-30 16:12:36 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 377)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 10300)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/fonts.
+        on line 2:1 of app/assets/stylesheets/application.scss
+>> @import "config/fonts";
+
+   ^
+):
+     8:     <meta charset="UTF-8">
+     9:     <link rel="stylesheet" href="styles.css">
+    10:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12: 
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    14:   </head>
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-03-30 16:13:17 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2811)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/colors.
+        on line 3:1 of app/assets/stylesheets/application.scss
+>> @import "config/colors";
+
+   ^
+):
+     8:     <meta charset="UTF-8">
+     9:     <link rel="stylesheet" href="styles.css">
+    10:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12: 
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    14:   </head>
+  
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-03-30 16:13:34 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms | Allocations: 6202)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: components/index.
+        on line 7:1 of app/assets/stylesheets/application.scss
+>> @import "components/index";
+
+   ^
+):
+     8:     <meta charset="UTF-8">
+     9:     <link rel="stylesheet" href="styles.css">
+    10:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12: 
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    14:   </head>
+  
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-03-30 16:13:41 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms | Allocations: 6189)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: components/index.
+        on line 7:1 of app/assets/stylesheets/application.scss
+>> @import "components/index";
+
+   ^
+):
+     8:     <meta charset="UTF-8">
+     9:     <link rel="stylesheet" href="styles.css">
+    10:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12: 
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    14:   </head>
+  
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-03-30 16:13:48 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms | Allocations: 6185)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: pages/index.
+        on line 7:1 of app/assets/stylesheets/application.scss
+>> @import "pages/index";
+
+   ^
+):
+     8:     <meta charset="UTF-8">
+     9:     <link rel="stylesheet" href="styles.css">
+    10:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12: 
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    14:   </head>
+  
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-03-30 16:13:57 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/micaelajenik/code/micaelajenik/Micalexia/public/packs
+[Webpacker] Hash: ef1911543f48dc2d035f
+Version: webpack 4.46.0
+Time: 1278ms
+Built at: 03/30/2021 4:14:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-079ae22a84f4ef8835b9.js    389 KiB  application  [emitted] [immutable]  application
+js/application-079ae22a84f4ef8835b9.js.map    486 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-079ae22a84f4ef8835b9.js js/application-079ae22a84f4ef8835b9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.14 KiB {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 5202ms (Views: 5201.8ms | ActiveRecord: 0.0ms | Allocations: 77846)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:15:42 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6901)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:15:54 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 5878)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:17:28 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 5871)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:17:29 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5874)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:23:30 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 31434)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:23:53 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 6361)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:25:54 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 6327)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:26:07 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6358)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:26:11 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 6362)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:27:08 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 373.5ms | Allocations: 160593)
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.0ms | Allocations: 161866)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `favicon' for #<#<Class:0x00007fc0e949e510>:0x00007fc0e950ff58>):
+    11:     <li>2016</li>
+    12:   </ol>
+    13: 
+    14:   <%= link_to url(favicon.jpg) %>
+    15: 
+    16: </div>
+  
+app/views/pages/home.html.erb:14
+Started GET "/" for ::1 at 2021-03-30 16:32:27 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 619.5ms | Allocations: 160554)
+Completed 500 Internal Server Error in 624ms (ActiveRecord: 0.0ms | Allocations: 161882)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `favicon' for #<#<Class:0x00007fc0edae4060>:0x00007fc0edaee7e0>):
+    11:     <li>2016</li>
+    12:   </ol>
+    13: 
+    14:   <%= link_to image_tag(favicon.jpg) %>
+    15: 
+    16: </div>
+  
+app/views/pages/home.html.erb:14
+Started GET "/" for ::1 at 2021-03-30 16:33:15 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 8092)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:33:26 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 746)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 7783)
+
+
+Started GET "/" for ::1 at 2021-03-30 16:34:05 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 7780)
+
+
+Started GET "/favicon.jpg" for ::1 at 2021-03-30 16:34:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.jpg"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-03-30 16:34:24 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 7769)
+
+
+Started GET "/favicon.jpg" for ::1 at 2021-03-30 16:34:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.jpg"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-03-30 16:34:30 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7765)
+
+
