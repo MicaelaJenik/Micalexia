@@ -369,3 +369,34 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7765)
 
 
+Started GET "/" for ::1 at 2021-04-08 00:24:01 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 31.8ms | Allocations: 752)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/micaelajenik/code/micaelajenik/Micalexia/public/packs
+[Webpacker] Hash: ef1911543f48dc2d035f
+Version: webpack 4.46.0
+Time: 1385ms
+Built at: 04/08/2021 12:24:06 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-079ae22a84f4ef8835b9.js    389 KiB  application  [emitted] [immutable]  application
+js/application-079ae22a84f4ef8835b9.js.map    486 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-079ae22a84f4ef8835b9.js js/application-079ae22a84f4ef8835b9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.14 KiB {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 5075ms (Views: 5059.3ms | ActiveRecord: 0.0ms | Allocations: 8769)
+
+
+Started GET "/" for ::1 at 2021-04-08 00:27:54 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 131.3ms | Allocations: 25451)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 158ms (Views: 150.9ms | ActiveRecord: 0.0ms | Allocations: 32361)
+
+
