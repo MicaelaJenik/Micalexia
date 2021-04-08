@@ -400,3 +400,51 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 158ms (Views: 150.9ms | ActiveRecord: 0.0ms | Allocations: 32361)
 
 
+Started GET "/" for ::1 at 2021-04-08 00:31:04 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 7665)
+
+
+Started GET "/" for ::1 at 2021-04-08 00:31:14 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 7654)
+
+
+Started GET "/" for ::1 at 2021-04-08 00:31:28 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 7327)
+
+
+Started GET "/" for ::1 at 2021-04-08 00:32:27 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 7301)
+
+
+Started GET "/" for ::1 at 2021-04-08 00:32:57 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 7324)
+
+
+Started GET "/" for ::1 at 2021-04-08 12:28:53 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 7330)
+
+
