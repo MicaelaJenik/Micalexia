@@ -1,1 +1,16 @@
-index.html
+<div class="text-gray-700">
+
+  <%= link_to root_path do %>
+    <h1 class="text-5xl">Alberto Greco</h1>
+  <% end %>
+
+  <% @artworks.each do |artwork| %>
+    <%= artwork.title %>
+    <%= artwork.year %>
+    <%= artwork.technique %>
+    <%= artwork.width %> x <%= artwork.height %> x <%= artwork.depth %>
+  <% end %>
+
+</div>
+
+
