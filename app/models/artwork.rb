@@ -1,5 +1,6 @@
 class Artwork < ApplicationRecord
   has_one_attached :photo
+  # belongs_to :phase
 
   validates :title, presence: true
   validates :year, presence: true
