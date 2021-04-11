@@ -1,13 +1,8 @@
-<div class="text-gray-700">
-  <%= link_to root_path do %>
-    <h1 class="text-5xl">Alberto Greco</h1>
-  <% end %>
+<% @shows.each do |show| %>
+  <%= show.title %>
+  <%= show.year %>
+  <%= show.place %>
+  <%= show.city %>
+  <%= show.country %>
+<% end %>
 
-  <% @shows.each do |show| %>
-    <%= show.title %>
-    <%= show.year %>
-    <%= show.place %>
-    <%= show.city %>
-    <%= show.country %>
-  <% end %>
-</div>

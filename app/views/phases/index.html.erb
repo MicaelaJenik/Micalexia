@@ -1,0 +1,10 @@
+<div class="py-6">
+  <% @phases.each do |phase| %>
+    <h3 class="text-3xl py-1 hover:underline">
+      <%= link_to phase_path(phase) do %>
+        <%= phase.title %>
+      <% end %>
+    </h3>
+  <% end %>
+</div>
+
