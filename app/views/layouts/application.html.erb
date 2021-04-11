@@ -18,20 +18,21 @@
 
     <div class="text-gray-700 p-5">
 
-      <div class="flex">
+      <div class="flex border-b pb-4">
 
-        <%= link_to root_path do %>
-          <h1 class="text-5xl">Alberto Greco</h1>
-        <% end %>
+        <h1 class="pr-2">
+          <%= link_to root_path do %>
+            <strong>ALBERTO GRECO</strong>
+          <% end %>
+        </h1>
 
-        <ol class="flex">
-          <li class="px-2">BIOGRAFIA</li>
-          <li class="px-2"><%= link_to "ETAPAS", phases_path %></li>
-          <li class="px-2"><%= link_to "OBRAS", artworks_path %></li>
-          <li class="px-2"><%= link_to "MUESTRAS", shows_path %></li>
-          <li class="px-2"><%= link_to "ARTE VIVO", lives_path %></li>
-          <li class="px-2"><%= link_to "ESCRITOS", writings_path %></li>
-        </ol>
+        <p>BIOGRAFIA</p>
+        <p class="px-2"><%= link_to "ETAPAS", phases_path %></p>
+        <p class="px-2"><%= link_to "OBRAS", artworks_path %></p>
+        <p class="px-2"><%= link_to "MUESTRAS", shows_path %></p>
+        <p class="px-2"><%= link_to "ARTE VIVO", lives_path %></p>
+        <p class="px-2"><%= link_to "ESCRITOS", writings_path %></p>
+
       </div>
 
       <%= yield %>
