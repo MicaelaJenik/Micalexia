@@ -28,7 +28,7 @@
           </h1>
 
           <div class="flex">
-            <p class="px-2">BIOGRAFIA</p>
+            <p class="px-2"><%= link_to "BIOGRAFIA", bio_path %></p>
             <p class="px-2"><%= link_to "ETAPAS", phases_path %></p>
             <p class="px-2"><%= link_to "OBRAS", artworks_path %></p>
             <p class="px-2"><%= link_to "MUESTRAS", shows_path %></p>
@@ -37,11 +37,12 @@
           </div>
 
         </div>
+
       <% end %>
 
       <%= yield %>
 
-      <div class="justify-end">
+      <div class="pt-5">
         <a href="https://www.instagram.com/vivodito/" class="pr-4"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/vivodito" class="pr-4"><i class="fab fa-twitter"></i></a>
         <a href="https://www.facebook.com/vivoditoarte" class="pr-4"><i class="fab fa-facebook"></i></a>
