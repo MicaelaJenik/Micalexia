@@ -21,7 +21,7 @@
       <% unless content_for? :navbar %>
         <div class="flex border-b pb-4 justify-between">
 
-          <h1 class="pr-2">
+          <h1 class="pr-2 text-gray-900">
             <%= link_to root_path do %>
               <strong>ALBERTO GRECO</strong>
             <% end %>
@@ -38,17 +38,17 @@
 
         </div>
 
+        <div class="py-3">
+
+        </div>
+
       <% end %>
 
       <%= yield %>
 
-      <div class="pt-5">
-        <a href="https://www.instagram.com/vivodito/" class="pr-4"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/vivodito" class="pr-4"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/vivoditoarte" class="pr-4"><i class="fab fa-facebook"></i></a>
-      </div>
-
+    <%= render 'shared/footer' %>
     </div>
+
 
   </body>
 </html>
