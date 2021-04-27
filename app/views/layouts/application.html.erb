@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Alberto Greco</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Alberto Greco</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%= favicon_link_tag asset_path('favicon.png') %>
-  </head>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= favicon_link_tag asset_path('favicon.png') %>
+</head>
 
-  <body>
+<body>
 
-    <div class="text-gray-700 p-5">
+  <div class="text-gray-600">
 
-      <% unless content_for? :navbar %>
+    <% if content_for? :navbar %>
+      <%= yield %>
+    <% else %>
+      <div class="p-5">
         <div class="flex border-b pb-4 justify-between">
 
-          <h1 class="pr-2 text-gray-900">
-            <%= link_to root_path do %>
-              <strong>ALBERTO GRECO</strong>
-            <% end %>
-          </h1>
+          <%= link_to root_path do %>
+          <h1 class="text-5xl text-gray-900"><strong>ALBERTO GRECO</strong></h1>
+          <% end %>
 
-          <div class="flex">
-            <p class="px-2"><%= link_to "BIOGRAFIA", bio_path %></p>
-            <p class="px-2"><%= link_to "ETAPAS", phases_path %></p>
-            <p class="px-2"><%= link_to "OBRAS", artworks_path %></p>
-            <p class="px-2"><%= link_to "MUESTRAS", shows_path %></p>
-            <p class="px-2"><%= link_to "ARTE VIVO", lives_path %></p>
-            <p class="px-2"><%= link_to "ESCRITOS", writings_path %></p>
+          <div class="flex pt-3">
+            <p class="px-2 hover:text-gray-1000"><%= link_to "BIOGRAFIA", bio_path %></p>
+            <p class="px-2 hover:text-gray-1000"><%= link_to "ETAPAS", phases_path %></p>
+            <p class="px-2 hover:text-gray-1000"><%= link_to "OBRAS", artworks_path %></p>
+            <p class="px-2 hover:text-gray-1000"><%= link_to "MUESTRAS", shows_path %></p>
+            <p class="px-2 hover:text-gray-1000"><%= link_to "ARTE VIVO", lives_path %></p>
+            <p class="px-2 hover:text-gray-1000"><%= link_to "ESCRITOS", writings_path %></p>
           </div>
 
         </div>
@@ -42,14 +43,16 @@
 
         </div>
 
-      <% end %>
 
-      <%= yield %>
+        <%= yield %>
+      </div>
+    <% end %>
 
-    <%= render 'shared/footer' %>
-    </div>
+      <%= render 'shared/footer' %>
+
+  </div>
 
 
-  </body>
+</body>
 </html>
 
