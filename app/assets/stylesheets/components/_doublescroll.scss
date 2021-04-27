@@ -1,0 +1,23 @@
+.right {
+  flex-basis: 80%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.left {
+  flex-basis: 80%;
+  height: 100vh;
+  overflow: auto;
+}
+
+nav header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 10;
+
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
