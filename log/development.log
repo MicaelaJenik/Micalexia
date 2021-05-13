@@ -10281,3 +10281,225 @@ Processing by PhasesController#show as HTML
 Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.8ms | Allocations: 11168)
 
 
+Started GET "/" for ::1 at 2021-05-09 18:03:46 -0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 335.7ms | Allocations: 37476)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 114)
+Completed 200 OK in 370ms (Views: 358.3ms | ActiveRecord: 0.0ms | Allocations: 47511)
+
+
+Started GET "/phases" for ::1 at 2021-05-09 18:04:02 -0300
+Processing by PhasesController#index as HTML
+  Rendering phases/index.html.erb within layouts/application
+  [1m[36mPhase Load (23.9ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/index.html.erb:6
+  Rendered phases/index.html.erb within layouts/application (Duration: 74.3ms | Allocations: 9992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 95ms (Views: 27.4ms | ActiveRecord: 58.9ms | Allocations: 19062)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:05:04 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (6.5ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 41ms (Views: 22.0ms | ActiveRecord: 7.1ms | Allocations: 13918)
+
+
+Started GET "/" for ::1 at 2021-05-09 18:06:33 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.5ms | Allocations: 4028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 108)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.0ms | Allocations: 12353)
+
+
+Started GET "/phases" for ::1 at 2021-05-09 18:06:35 -0300
+Processing by PhasesController#index as HTML
+  Rendering phases/index.html.erb within layouts/application
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/index.html.erb:6
+  Rendered phases/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3451)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.4ms | Allocations: 10957)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:06:36 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.5ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3722)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.8ms | Allocations: 11393)
+
+
+Started GET "/" for ::1 at 2021-05-09 18:07:40 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3498)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 10398)
+
+
+Started GET "/phases" for ::1 at 2021-05-09 18:07:41 -0300
+Processing by PhasesController#index as HTML
+  Rendering phases/index.html.erb within layouts/application
+  [1m[36mPhase Load (0.5ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/index.html.erb:6
+  Rendered phases/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2918)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.5ms | Allocations: 9865)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:07:42 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.7ms | Allocations: 10596)
+
+
+Started GET "/" for ::1 at 2021-05-09 18:07:49 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.1ms | Allocations: 4028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 113)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 12347)
+
+
+Started GET "/phases" for ::1 at 2021-05-09 18:07:51 -0300
+Processing by PhasesController#index as HTML
+  Rendering phases/index.html.erb within layouts/application
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/index.html.erb:6
+  Rendered phases/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3444)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms | Allocations: 10968)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:07:52 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3721)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.6ms | Allocations: 11385)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:07:55 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.7ms | Allocations: 10597)
+
+
+Started GET "/phases/18" for ::1 at 2021-05-09 18:07:55 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.7ms | Allocations: 10600)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:07:56 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (0.3ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.7ms | Allocations: 10600)
+
+
+Started GET "/" for ::1 at 2021-05-09 18:09:59 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.7ms | Allocations: 4028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 108)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 12344)
+
+
+Started GET "/phases" for ::1 at 2021-05-09 18:10:01 -0300
+Processing by PhasesController#index as HTML
+  Rendering phases/index.html.erb within layouts/application
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/index.html.erb:6
+  Rendered phases/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 3441)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.4ms | Allocations: 10938)
+
+
+Started GET "/phases/17" for ::1 at 2021-05-09 18:10:02 -0300
+Processing by PhasesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPhase Load (0.2ms)[0m  [1m[34mSELECT "phases".* FROM "phases" WHERE "phases"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/phases_controller.rb:8:in `show'
+  Rendering phases/show.html.erb within layouts/application
+  [1m[36mPhase Load (0.4ms)[0m  [1m[34mSELECT "phases".* FROM "phases"[0m
+  ↳ app/views/phases/show.html.erb:24
+  Rendered phases/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.6ms | Allocations: 11392)
+
+
+Started GET "/" for ::1 at 2021-05-10 01:01:26 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.9ms | Allocations: 4028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 113)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms | Allocations: 12184)
+
+

@@ -5,47 +5,81 @@
 
 <div class="flex">
 
-  <div class="w-1/4">
+  <!-- <div class="flex" style="width: 25%;"> -->
+
+<!--     <div>
+
+      <div class="flex vertical-menu">
+        <p class="px-2 hover:text-yellow-300 flex-1"><%= link_to "GRECO", root_path %></p>
+        <p class="px-2 hover:text-yellow-300 flex-1"><%= link_to "BIOGRAFIA", bio_path %></p>
+        <p class="px-2 hover:text-yellow-300 flex-1"><%= link_to "ETAPAS", phases_path %></p>
+        <p class="px-2 hover:text-yellow-300 flex-1"><%= link_to "OBRAS", artworks_path %></p>
+        <p class="px-2 hover:text-yellow-300 flex-1"><%= link_to "MUESTRAS", shows_path %></p>
+        <p class="px-2 hover:text-yellow-300 flex-1" style="width: 100px;"><%= link_to "ARTE VIVO", lives_path %></p>
+        <p class="px-2 hover:text-yellow-300 flex-1"><%= link_to "ESCRITOS", writings_path %></p>
+      </div>
+
+      <div>
+        <div class="bg-gray-100 h-screen pl-5 pt-7">
+          <% @phases.each do |phase| %>
+            <h3 class="hover:text-yellow-300">
+              <%= link_to phase_path(phase) do %>
+                <%= phase.title %>
+              <% end %>
+            </h3>
+          <% end %>
+        </div>
+      </div>
+
+    </div> -->
+
+
+
+  <div class="left">
 
     <div class="flex">
 
-      <div class="w-1/2">
-        <ol class="flex" style="transform: rotate(-90deg)">
-          <p class="px-2 hover:text-yellow-300"><%= link_to "GRECO", root_path %></p>
-          <p class="px-2 hover:text-yellow-300"><%= link_to "BIOGRAFIA", bio_path %></p>
-          <li class="px-2 hover:text-yellow-300"><%= link_to "ETAPAS", phases_path %></li>
-          <li class="px-2 hover:text-yellow-300"><%= link_to "OBRAS", artworks_path %></li>
-          <li class="px-2 hover:text-yellow-300"><%= link_to "MUESTRAS", shows_path %></li>
-          <li class="px-2 hover:text-yellow-300"><%= link_to "ARTE VIVO", lives_path %></li>
-          <li class="px-2 hover:text-yellow-300"><%= link_to "ESCRITOS", writings_path %></li>
-        </ol>
-      </div>
+      <div class="w-1/4">
 
-      <div class="w-1/2 bg-gray-100 h-screen pl-5 pt-7">
-        <% @phases.each do |phase| %>
-          <h3 class="hover:text-yellow-300">
-            <%= link_to phase_path(phase) do %>
-            <%= phase.title %>
-            <% end %>
-          </h3>
-        <% end %>
+        <div class="vertical-menu">
+          <ol class="pt-7 pl-3">
+            <p class="px-2 hover:text-yellow-300"><%= link_to "GRECO", root_path %></p>
+            <p class="px-2 hover:text-yellow-300"><%= link_to "BIOGRAFIA", bio_path %></p>
+            <li class="px-2 hover:text-yellow-300"><%= link_to "ETAPAS", phases_path %></li>
+            <li class="px-2 hover:text-yellow-300"><%= link_to "OBRAS", artworks_path %></li>
+            <li class="px-2 hover:text-yellow-300"><%= link_to "MUESTRAS", shows_path %></li>
+            <li class="px-2 hover:text-yellow-300"><%= link_to "ARTE VIVO", lives_path %></li>
+            <li class="px-2 hover:text-yellow-300"><%= link_to "ESCRITOS", writings_path %></li>
+          </ol>
+        </div>
+
+        <div class="w-1/2 bg-gray-100 h-screen pl-5 pt-7">
+          <% @phases.each do |phase| %>
+            <h3 class="hover:text-yellow-300">
+              <%= link_to phase_path(phase) do %>
+              <%= phase.title %>
+              <% end %>
+            </h3>
+          <% end %>
+        </div>
+
       </div>
 
     </div>
   </div>
 
-<div class="right w-3/4">
-  <div style="height: 1800px;">
-    <div>
-      <%= image_tag asset_path('nascimiento.jpg') %>
-    </div>
-    <div>
-      <%= image_tag asset_path('sos.jpg') %>
-    </div>
-    <div>
-      <%= image_tag asset_path('grande.jpg') %>
+  <div class="right w-3/4">
+    <div style="height: 1800px;">
+      <div>
+        <%= image_tag asset_path('nascimiento.jpg') %>
+      </div>
+      <div>
+        <%= image_tag asset_path('sos.jpg') %>
+      </div>
+      <div>
+        <%= image_tag asset_path('grande.jpg') %>
+      </div>
     </div>
   </div>
-</div>
 
 </div>
