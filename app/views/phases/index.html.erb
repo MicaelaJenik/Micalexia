@@ -11,7 +11,7 @@
       <div class="flex">
 
         <div class="">
-          <ol class="pt-7 pl-3">
+          <ol class="pt-7 px-3">
             <p class="px-2 hover:text-yellow-300"><%= link_to "GRECO", root_path %></p>
             <p class="px-2 hover:text-yellow-300"><%= link_to "BIOGRAFIA", bio_path %></p>
             <li class="px-2 hover:text-yellow-300"><%= link_to "ETAPAS", phases_path %></li>
@@ -22,14 +22,28 @@
           </ol>
         </div>
 
-        <div class="bg-gray-100 h-screen pl-5 pt-7">
-          <% @phases.each do |phase| %>
+        <div class="bg-gray-100 h-screen px-5 pt-7">
+<!--           <% @phases.each do |phase| %>
             <h3 class="hover:text-yellow-300">
               <%= link_to phase_path(phase) do %>
-              <%= phase.title %>
+                <%= phase.title %>
               <% end %>
             </h3>
-          <% end %>
+          <% end %> -->
+
+          <h1 class="hover:text-yellow-300">PRIMERA ETAPA</h1>
+<!--           <div class="hover-image">
+            <%= image_tag asset_path('nun2.png') %>
+          </div> -->
+
+          <h1 class="hover:text-yellow-300"><%= link_to "INFORMALISMO", @phases.phase_path(id: 17) %></h1>
+          <h1 class="hover:text-yellow-300">LA EXPOSICION RODANTE</h1>
+          <h1 class="hover:text-yellow-300">LAS MONJAS  </h1>
+          <h1 class="hover:text-yellow-300">LA VIDA SOBRE PAPEL</h1>
+          <h1 class="hover:text-yellow-300">ARTE VIVO</h1>
+          <h1 class="hover:text-yellow-300">COLLAGE</h1>
+          <h1 class="hover:text-yellow-300">ESCRITOS</h1>
+
         </div>
 
       </div>
@@ -40,7 +54,7 @@
   <div class="flex-grow">
     <div class="right">
       <div style="height: 1800px;">
-        <h1>TAPA QUE SE VA REEMPLAZANDO POR IMAGEN EN EL HOVER</h1>
+        <%= image_tag asset_path('fiesta.jpg') %>
       </div>
     </div>
   </div>
